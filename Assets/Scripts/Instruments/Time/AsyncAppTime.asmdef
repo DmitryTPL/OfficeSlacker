@@ -1,0 +1,19 @@
+{
+    "name": "AsyncAppTime",
+    "rootNamespace": "AsyncAppTime",
+    "references": [
+        "Zenject",
+        "MVP",
+        "UniTask",
+        "UniTask.Linq"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

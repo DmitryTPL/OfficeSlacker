@@ -1,0 +1,17 @@
+{
+    "name": "ZenjectInstallerGeneration",
+    "rootNamespace": "",
+    "references": [
+        "MVP",
+        "Zenject"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

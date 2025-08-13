@@ -1,0 +1,16 @@
+{
+    "name": "MVP.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e3c0c0075d4a3f246a98173bdb56a9e3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
