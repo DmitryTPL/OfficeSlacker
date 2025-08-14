@@ -26,7 +26,7 @@ public static class BaseInstallersLogic
 
         if (InstallerConfigHolder.Config == null)
         {
-            Debug.LogError("Config CreateInstallerConfig need to be created in Resources folder");
+            Debug.LogError($"Config {nameof(GenerateInstallerConfig)} need to be created in Resources folder");
             return false;
         }
 
