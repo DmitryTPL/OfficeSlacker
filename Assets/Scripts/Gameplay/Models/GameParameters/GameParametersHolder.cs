@@ -17,8 +17,20 @@ namespace Gameplay.Models
 
         public GameParametersHolder(GameParametersConfig gameParametersConfig)
         {
+            UpdateValuesWithInitialParameters(gameParametersConfig);
+        }
+
+        private void UpdateValuesWithInitialParameters(GameParametersConfig gameParametersConfig)
+        {
             foreach (var parameter in Enum.GetValues(typeof(GameParameterType)).Cast<GameParameterType>())
             {
+                if (!gameParametersConfig.BaseParametersInfo.ContainsKey(parameter))
+                {
+                    _values[parameter] = 0; 
+                    
+                    continue;
+                }
+                
                 _values[parameter] = gameParametersConfig.BaseParametersInfo[parameter].InitialValue;
             }
         }

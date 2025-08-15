@@ -3,7 +3,8 @@
     public enum GameParameterType
     {
         BossAlertness,
-        MainCharacterReputation,
+        Reputation,
+        Boredom,
         Time,
         Money
     }

@@ -29,11 +29,6 @@ MonoBehaviour:
         _minValue: 0
         _maxValue: 100
         _initialValue: 0
-    - Key: 3
-      Value:
-        _minValue: 0
-        _maxValue: 0
-        _initialValue: 0
   _changingInTimeParameters:
     _serializedList:
     - Key: 1

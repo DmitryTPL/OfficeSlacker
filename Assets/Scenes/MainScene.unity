@@ -741,6 +741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfficeView
       objectReference: {fileID: 0}
+    - target: {fileID: 6231254352300061876, guid: c85936f58cf14ce47bbfb16b4a772e1c, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7825901468859876455, guid: c85936f58cf14ce47bbfb16b4a772e1c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
