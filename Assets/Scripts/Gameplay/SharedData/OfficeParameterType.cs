@@ -1,11 +1,10 @@
 ﻿namespace Gameplay.SharedData
 {
-    public enum GameParameterType
+    public enum OfficeParameterType
     {
         BossAlertness,
         Reputation,
         Boredom,
-        Time,
-        Money
+        Time
     }
 }

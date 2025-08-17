@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbd46fa5b1384b6d80b16adeb6467511, type: 3}
-  m_Name: GameParametersConfig
+  m_Name: OfficeParametersConfig
   m_EditorClassIdentifier: 
   _baseParametersInfo:
     _serializedList:

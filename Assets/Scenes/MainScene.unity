@@ -737,6 +737,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5392789958308614271, guid: c85936f58cf14ce47bbfb16b4a772e1c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 253
+      objectReference: {fileID: 0}
     - target: {fileID: 5691483637278919660, guid: c85936f58cf14ce47bbfb16b4a772e1c, type: 3}
       propertyPath: m_Name
       value: OfficeView
@@ -744,6 +748,10 @@ PrefabInstance:
     - target: {fileID: 6231254352300061876, guid: c85936f58cf14ce47bbfb16b4a772e1c, type: 3}
       propertyPath: m_FillAmount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474386992929522622, guid: c85936f58cf14ce47bbfb16b4a772e1c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7825901468859876455, guid: c85936f58cf14ce47bbfb16b4a772e1c, type: 3}
       propertyPath: m_Pivot.x

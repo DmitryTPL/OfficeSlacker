@@ -6,18 +6,18 @@ using UnityEngine;
 namespace Gameplay.Models
 {
     [Serializable]
-    public class ParametersChangeInTimeDictionary : SerializedDictionary<GameParameterType, GameParameterChangeInTimeConfigData>
+    public class ParametersChangeInTimeDictionary : SerializedDictionary<OfficeParameterType, GameParameterChangeInTimeConfigData>
     {
     }
 
     [Serializable]
-    public class BaseParametersInfoDictionary : SerializedDictionary<GameParameterType, BaseParameterInfo>
+    public class BaseParametersInfoDictionary : SerializedDictionary<OfficeParameterType, BaseParameterInfo>
     {
     }
 
-    [CreateAssetMenu(fileName = nameof(GameParametersConfig), menuName = "Configs/GameParameters")]
+    [CreateAssetMenu(fileName = nameof(OfficeParametersConfig), menuName = "Configs/OfficeParameters")]
     [Serializable]
-    public class GameParametersConfig : ScriptableObject
+    public class OfficeParametersConfig : ScriptableObject
     {
         [SerializeField] private BaseParametersInfoDictionary _baseParametersInfo;
         [SerializeField] private ParametersChangeInTimeDictionary _changingInTimeParameters;

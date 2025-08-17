@@ -7,13 +7,13 @@ namespace Gameplay.Models
     {
     }
 
-    public class GameParametersChangeHandler : IMainCharacterParametersChangeHandler, ITickable
+    public class OfficeParametersChangeHandler : IMainCharacterParametersChangeHandler, ITickable
     {
-        private readonly GameParametersConfig _config;
+        private readonly OfficeParametersConfig _config;
         private readonly IGameParametersHolder _gameParametersHolder;
         private readonly IAppTime _appTime;
 
-        public GameParametersChangeHandler(GameParametersConfig config, IGameParametersHolder gameParametersHolder, IAppTime appTime)
+        public OfficeParametersChangeHandler(OfficeParametersConfig config, IGameParametersHolder gameParametersHolder, IAppTime appTime)
         {
             _config = config;
             _gameParametersHolder = gameParametersHolder;

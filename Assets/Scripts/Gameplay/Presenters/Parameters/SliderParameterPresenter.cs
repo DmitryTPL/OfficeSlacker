@@ -13,13 +13,13 @@ namespace Gameplay.Presenters
         [Serializable]
         public class Data : BasePresenterViewSharedData
         {
-            [SerializeField] private GameParameterType _parameterType;
+            [SerializeField] private OfficeParameterType _parameterType;
 
-            public GameParameterType ParameterType => _parameterType;
+            public OfficeParameterType ParameterType => _parameterType;
         }
         
         private readonly IGameParametersHolder _gameParametersHolder;
-        private readonly GameParametersConfig _parametersConfig;
+        private readonly OfficeParametersConfig _parametersConfig;
         
         private readonly AsyncReactiveProperty<float> _parameterPercentChanged = new(default);
 
@@ -32,7 +32,7 @@ namespace Gameplay.Presenters
         public SliderParameterPresenter() { }
         
         [Inject]
-        public SliderParameterPresenter(IGameParametersHolder gameParametersHolder, GameParametersConfig parametersConfig)
+        public SliderParameterPresenter(IGameParametersHolder gameParametersHolder, OfficeParametersConfig parametersConfig)
         {
             _gameParametersHolder = gameParametersHolder;
             _parametersConfig = parametersConfig;
