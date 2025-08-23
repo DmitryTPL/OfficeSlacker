@@ -1,6 +1,6 @@
 {
     "name": "Gameplay.SharedData",
-    "rootNamespace": "",
+    "rootNamespace": "Gameplay.SharedData",
     "references": [
         "GUID:f51ebe6a0ceec4240a699833d6309b23",
         "GUID:27d2decdb1f976a45bf5fdecbb2c295d"
