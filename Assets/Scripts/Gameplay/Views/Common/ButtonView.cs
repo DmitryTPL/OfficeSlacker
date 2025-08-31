@@ -1,4 +1,5 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System;
+using Cysharp.Threading.Tasks;
 using Cysharp.Threading.Tasks.Linq;
 using Gameplay.Presenters;
 using MVP;
@@ -11,17 +12,20 @@ namespace Gameplay.Views
         where TPresenter : ButtonPresenter, new()
     {
         [SerializeField] private Button _button;
+        [SerializeField] private float _nextClickDelay = 0.1f;
 
         protected override void PresenterAttached()
         {
             base.PresenterAttached();
 
-            _button.OnClickAsAsyncEnumerable().ForEachAsync(ButtonClicked, destroyCancellationToken).Forget();
+            _button.OnClickAsAsyncEnumerable().ForEachAwaitAsync(ButtonClicked, destroyCancellationToken).Forget();
         }
 
-        private void ButtonClicked(AsyncUnit _)
+        private async UniTask ButtonClicked(AsyncUnit _)
         {
             Presenter.Clicked();
+            
+            await UniTask.Delay(TimeSpan.FromSeconds(_nextClickDelay));
         }
     }
 }

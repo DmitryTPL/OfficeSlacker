@@ -20,7 +20,7 @@ namespace Gameplay.Models
         private readonly ActionsImplementationConfig _config;
         private readonly IAppTime _appTime;
 
-        private Dictionary<ActionImplementationType, LaunchedActionInfo> _launchedActions = new();
+        private readonly Dictionary<ActionImplementationType, LaunchedActionInfo> _launchedActions = new();
 
         public TimedActionsHandler(IActionImplementationBroadcast actionImplementationBroadcast, ActionsImplementationConfig config, IAppTime appTime,
             CancellationToken destroyToken)

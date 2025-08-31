@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20273b5221654a1b86ba54389bd84c92, type: 3}
+  m_Name: BypassCarsConfig
+  m_EditorClassIdentifier: 
+  _obstacles:
+  - _obstacleType: 0
+    _prefab: {fileID: 2565678642338493571, guid: e919909097b55de40942f0fdaba36f49, type: 3}
+    _spawnProbability: 0.01
+  - _obstacleType: 1
+    _prefab: {fileID: 6675433785068469807, guid: e71f8644281ae3840bfff5c845056487, type: 3}
+    _spawnProbability: 0.6
+  - _obstacleType: 2
+    _prefab: {fileID: 2136676490385234036, guid: 17d80f4569416b94984e096794571a25, type: 3}
+    _spawnProbability: 0.3
+  _speed: 1
+  _emptySpaceBetweenObstaclesSameLaneHeight: 100
+  _emptySpaceBetweenObstaclesDifferentLaneHeight: 200

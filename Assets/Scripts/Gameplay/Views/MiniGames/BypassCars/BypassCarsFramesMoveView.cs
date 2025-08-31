@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Gameplay.Views
 {
-    public class BypassCarGameView : View<BypassCarGamePresenter>
+    public class BypassCarsFramesMoveView : View<BypassCarsFramesMovePresenter>
     {
-        [SerializeField] private BypassCarGamePresenter.Data _data;
+        [SerializeField] private BypassCarsFramesMovePresenter.Data _data;
 
         protected override BasePresenterViewSharedData SharedData => _data;
     }

@@ -28,13 +28,11 @@ namespace Gameplay.Models
 
         public void LaunchAction(ActionImplementationType actionImplementation)
         {
-
             _actionLaunched.Value = actionImplementation;
         }
 
         public void FinishAction(ActionImplementationType actionImplementation)
         {
-
             _actionFinished.Value = actionImplementation;
         }
     }

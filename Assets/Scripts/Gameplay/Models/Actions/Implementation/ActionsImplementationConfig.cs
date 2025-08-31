@@ -1,6 +1,5 @@
 ﻿using System;
 using AYellowpaper.SerializedCollections;
-using EditorAttributes;
 using Gameplay.SharedData;
 using UnityEngine;
 

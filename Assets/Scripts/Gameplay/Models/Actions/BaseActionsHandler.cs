@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Linq;
-using Cysharp.Threading.Tasks;
-using Gameplay.SharedData;
 using UnityEngine;
 using Zenject;
 
@@ -10,7 +8,6 @@ namespace Gameplay.Models
     public interface IActionsHandler<in TActionEnum>
         where TActionEnum : Enum
     {
-        
         void Launch(TActionEnum actionType);
     }
 

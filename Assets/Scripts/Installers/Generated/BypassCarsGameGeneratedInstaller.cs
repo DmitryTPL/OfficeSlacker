@@ -13,11 +13,15 @@ namespace GeneratedInstallers
         protected override void InstallPresenters()
         {
             Container.BindInterfacesAndSelfTo<Gameplay.Presenters.ActionImplementationPresenter>().AsSingle();
-            Container.BindInterfacesAndSelfTo<Gameplay.Presenters.BypassCarGamePresenter>().AsSingle();
+            Container.BindInterfacesAndSelfTo<Gameplay.Presenters.BypassCarsGamePresenter>().AsSingle();
+            Container.BindInterfacesAndSelfTo<Gameplay.Presenters.BypassCarsFramesMovePresenter>().AsSingle();
+            Container.BindInterfacesAndSelfTo<Gameplay.Presenters.BypassCarsPlayerMovePresenter>().AsSingle();
         }
 
         protected override void InstallInjectedInPresenterTypes()
         {
+            Container.BindInterfacesTo<Gameplay.Models.BypassCarsObstaclesPool>().AsSingle();
+            Container.BindInterfacesTo<Gameplay.Models.BypassCarsSharedData>().AsSingle();
         }
     }
 }

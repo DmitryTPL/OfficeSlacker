@@ -9,6 +9,8 @@ namespace Installers
         {
             Container.BindInterfacesTo<ActionImplementationBroadcast>().AsSingle();
             Container.BindInterfacesTo<TimedActionsHandler>().AsSingle();
+
+            Container.BindInterfacesTo<ActivityButtonsHandler>().AsSingle();
         }
     }
 }
